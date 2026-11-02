@@ -5,21 +5,21 @@
 class Fmux < Formula
   desc "OpenAI-compatible gateway in front of every local inference server"
   homepage "https://github.com/isLinXu/fmux"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/isLinXu/fmux/releases/download/v0.1.1/fmux_0.1.1_darwin_amd64.tar.gz"
-    sha256 "b4ad3f7b1a2975826fdc17c306b8c26a281b6ca7cb4beef8d67419dd0c4e832c"
+    url "https://github.com/isLinXu/fmux/releases/download/v0.1.2/fmux_0.1.2_darwin_amd64.tar.gz"
+    sha256 "45fe551d7eea241473b302bcb5c4601eef59814a53585d3eb0ff860755651c85"
 
     define_method(:install) do
       bin.install "fmux"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/isLinXu/fmux/releases/download/v0.1.1/fmux_0.1.1_darwin_arm64.tar.gz"
-    sha256 "4b7b7cb70045396d3a72dffd86931b524902bf3240d6cfa9cd4083c7ee1c1f5c"
+    url "https://github.com/isLinXu/fmux/releases/download/v0.1.2/fmux_0.1.2_darwin_arm64.tar.gz"
+    sha256 "d0bef5dfc897755675fb9fcd5649953d8482f200aabbddf6799bbb461639a9e3"
 
     define_method(:install) do
       bin.install "fmux"
